@@ -30,7 +30,6 @@ public class EmployeeService implements EmployeeServiceMethods {
 			return ResponseEntity.status(200).body(emp);
 		}
 		else
-//			return ResponseEntity.status(404).body("No employee found for the given ID");
 			throw new EmployeeNotFoundException("No employee found for the ID: "+eid);
 	}
 	
@@ -46,7 +45,6 @@ public class EmployeeService implements EmployeeServiceMethods {
 			return ResponseEntity.status(200).body(empList);
 		}
 		else 
-//			return ResponseEntity.status(404).body("No employees found for the given name");
 			throw new EmployeeNotFoundException("No employee found for the name: "+name);
 	}
 	
